@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sapphire Facility Vision — Catalog</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -67,47 +67,90 @@
 <!-- ══ ABOUT ══ -->
 <section id="about">
   <div class="container">
+    <div class="about-header">
+      <p class="section-eyebrow reveal">Who We Are</p>
+      <h2 class="section-title reveal">About Us</h2>
+      <div class="section-rule reveal"></div>
+    </div>
+
     <div class="about-grid">
       <div class="about-text">
-        <p class="section-eyebrow reveal">Who We Are</p>
-        <h2 class="section-title reveal">About Us</h2>
-        <div class="section-rule reveal"></div>
-        <p class="reveal" style="transition-delay:.1s">Sapphire Facility Vision is a facility management company with a fresh vision and a strong commitment to delivering reliable, efficient, and tailored services to meet the dynamic needs of modern businesses and properties.</p>
-        <p class="reveal" style="transition-delay:.2s">Although new in the industry, our team is composed of experienced professionals who bring deep knowledge, dedication, and a customer-first mindset to every project we undertake.</p>
-        <p class="reveal" style="transition-delay:.3s">We understand that a well-maintained environment plays a crucial role in the safety, productivity, and overall satisfaction of every client we serve.</p>
+        <span class="about-watermark" aria-hidden="true">SFV</span>
+        <p class="about-lead reveal" style="transition-delay:.1s"><span class="drop-cap">S</span>apphire Facility Vision is a facility management company built on a fresh vision and an uncompromising commitment to reliable, efficient, and tailored service for the properties and businesses we serve.</p>
+        <p class="reveal" style="transition-delay:.2s">Though new to the industry, our team is built from experienced professionals — people who bring deep operational knowledge, hands-on dedication, and a genuinely customer-first mindset to every site we manage.</p>
+        <p class="reveal" style="transition-delay:.3s">We believe a well-maintained environment isn't a nicety — it's the foundation of safety, productivity, and the everyday satisfaction of everyone who walks through the door.</p>
 
-        <div class="mv-grid">
-          <div class="mv-card dark reveal" style="transition-delay:.4s">
-            <div class="mv-label">What Drives Us</div>
-            <div class="mv-title" style="color:#fff">Our Mission</div>
-            <p class="mv-text">To provide high-quality, reliable, and sustainable facility management services that enhance the safety, comfort, and efficiency of every space we manage.</p>
-          </div>
-          <div class="mv-card reveal" style="transition-delay:.5s">
-            <div class="mv-label">Where We're Headed</div>
-            <div class="mv-title">Our Vision</div>
-            <p class="mv-text">To be the most trusted facility management partner in the region — known for innovation, integrity, and consistent service excellence.</p>
-          </div>
-        </div>
+        <blockquote class="about-pullquote reveal" style="transition-delay:.35s">
+          "A clean, well-run space isn't just maintained — it's cared for."
+        </blockquote>
       </div>
 
-      <!-- Meet the Team — replace images/team-1.jpg (etc.) with real photos, no HTML changes needed -->
-      <div class="about-visual reveal-right">
-        <div class="team-label">Meet The Team</div>
-        <div class="team-grid">
-          <div class="team-card">
-            <div class="team-photo"><img src="images/team-1.jpg" alt="Team member name"></div>
-            <div class="team-name">Team Member Name</div>
-            <div class="team-role">Role / Title</div>
+      <!-- Mission / Vision -->
+      <div class="mv-stack reveal-right">
+        <div class="mv-card mv-mission">
+          <div class="mv-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+              <circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5.2"/><circle cx="12" cy="12" r="1.3" fill="currentColor" stroke="none"/>
+            </svg>
           </div>
-          <div class="team-card">
-            <div class="team-photo"><img src="images/team-2.jpg" alt="Team member name"></div>
-            <div class="team-name">Team Member Name</div>
-            <div class="team-role">Role / Title</div>
+          <div class="mv-label">01 · What Drives Us</div>
+          <div class="mv-title">Our Mission</div>
+          <p class="mv-text">To provide high-quality, reliable, and sustainable facility management services that enhance the safety, comfort, and efficiency of every space we manage.</p>
+        </div>
+
+        <div class="mv-seam" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v14"/><path d="M6 13l6 6 6-6"/></svg>
+        </div>
+
+        <div class="mv-card mv-vision">
+          <div class="mv-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5 5-2z" fill="currentColor" stroke="none"/>
+            </svg>
           </div>
-          <div class="team-card">
-            <div class="team-photo"><img src="images/team-3.jpg" alt="Team member name"></div>
-            <div class="team-name">Team Member Name</div>
-            <div class="team-role">Role / Title</div>
+          <div class="mv-label">02 · Where We're Headed</div>
+          <div class="mv-title">Our Vision</div>
+          <p class="mv-text">To be the most trusted facility management partner in the region — known for innovation, integrity, and consistent service excellence.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Meet the Team — sample names/roles below are placeholder content, swap for your real team.
+         To use real photos: replace the contents of a .team-avatar div with <img src="images/team-1.jpg" alt="..."> -->
+    <div class="team-section reveal">
+      <div class="team-header">
+        <p class="section-eyebrow">The People Behind It</p>
+        <h3 class="team-heading">Meet The Team</h3>
+      </div>
+      <div class="team-grid">
+        <div class="team-card" style="--accent:var(--teal)">
+          <div class="team-avatar"><span>AM</span></div>
+          <div class="team-name">Arjun Mehta</div>
+          <div class="team-role">Founder &amp; CEO</div>
+          <p class="team-bio">Sets the vision and leads every client partnership personally.</p>
+          <div class="team-social">
+            <a href="#" aria-label="Email">✉</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+        <div class="team-card" style="--accent:var(--teal-mid)">
+          <div class="team-avatar"><span>PN</span></div>
+          <div class="team-name">Priya Nair</div>
+          <div class="team-role">Operations Director</div>
+          <p class="team-bio">Oversees day-to-day service delivery and quality on every site.</p>
+          <div class="team-social">
+            <a href="#" aria-label="Email">✉</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+        <div class="team-card" style="--accent:var(--teal-light)">
+          <div class="team-avatar"><span>RV</span></div>
+          <div class="team-name">Rohan Verma</div>
+          <div class="team-role">Head of Client Services</div>
+          <p class="team-bio">Your first point of contact — fast, responsive, and hands-on.</p>
+          <div class="team-social">
+            <a href="#" aria-label="Email">✉</a>
+            <a href="#" aria-label="LinkedIn">in</a>
           </div>
         </div>
       </div>
@@ -174,6 +217,8 @@
 
       <!-- 01 Office Admin -->
       <div class="service-card reveal" style="transition-delay:.05s">
+        <!-- Photo placeholder: replace with <img src="images/service-1.jpg" alt="..."> for a real photo -->
+        <div class="svc-photo"><span>Add photo</span></div>
         <div class="svc-icon">
           <svg viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
             <rect x="4" y="10" width="48" height="38" rx="2" fill="none" stroke="#2A85A8" stroke-width="2"/>
@@ -192,11 +237,13 @@
         <div class="svc-num">01</div>
         <div class="svc-category">Administrative Support</div>
         <div class="svc-name">Office Administration</div>
-        <div class="svc-desc">Efficient front desk, mail handling, meeting room coordination, visitor management, and comprehensive document control.</div>
+        <div class="svc-desc">Front desk, mail handling, visitor management, and document control.</div>
       </div>
 
       <!-- 02 Cleaning -->
       <div class="service-card reveal" style="transition-delay:.1s">
+        <!-- Photo placeholder: replace with <img src="images/service-2.jpg" alt="..."> for a real photo -->
+        <div class="svc-photo"><span>Add photo</span></div>
         <div class="svc-icon icon-broom">
           <svg viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
             <g class="handle">
@@ -222,11 +269,13 @@
         <div class="svc-num">02</div>
         <div class="svc-category">Housekeeping & Hygiene</div>
         <div class="svc-name">General Cleaning</div>
-        <div class="svc-desc">Routine and deep cleaning for all facility areas using eco-friendly, professionally graded products for a consistently spotless workspace.</div>
+        <div class="svc-desc">Routine and deep cleaning with professional-grade, eco-friendly products.</div>
       </div>
 
       <!-- 03 Landscaping -->
       <div class="service-card reveal" style="transition-delay:.15s">
+        <!-- Photo placeholder: replace with <img src="images/service-3.jpg" alt="..."> for a real photo -->
+        <div class="svc-photo"><span>Add photo</span></div>
         <div class="svc-icon icon-leaf">
           <svg viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
             <g class="leaf">
@@ -247,11 +296,13 @@
         <div class="svc-num">03</div>
         <div class="svc-category">Outdoor & Green Spaces</div>
         <div class="svc-name">Landscaping Maintenance</div>
-        <div class="svc-desc">Professional lawn and garden upkeep: mowing, pruning, seasonal planting, and irrigation system maintenance year-round.</div>
+        <div class="svc-desc">Lawn and garden upkeep — mowing, pruning, and irrigation, year-round.</div>
       </div>
 
       <!-- 04 Techno-Mechanical -->
       <div class="service-card reveal" style="transition-delay:.2s">
+        <!-- Photo placeholder: replace with <img src="images/service-4.jpg" alt="..."> for a real photo -->
+        <div class="svc-photo"><span>Add photo</span></div>
         <div class="svc-icon icon-gear">
           <svg viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
             <g class="gear">
@@ -271,11 +322,13 @@
         <div class="svc-num">04</div>
         <div class="svc-category">Engineering & Maintenance</div>
         <div class="svc-name">Techno-Mechanical Services</div>
-        <div class="svc-desc">Expert maintenance of HVAC, plumbing, fire safety equipment, and electrical infrastructure for safe and compliant operations.</div>
+        <div class="svc-desc">HVAC, plumbing, fire safety, and electrical maintenance — safe and compliant.</div>
       </div>
 
       <!-- 05 Pest Control -->
       <div class="service-card reveal" style="transition-delay:.25s">
+        <!-- Photo placeholder: replace with <img src="images/service-5.jpg" alt="..."> for a real photo -->
+        <div class="svc-photo"><span>Add photo</span></div>
         <div class="svc-icon icon-pest">
           <svg viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
             <!-- Shield -->
@@ -296,11 +349,13 @@
         <div class="svc-num">05</div>
         <div class="svc-category">Health & Safety</div>
         <div class="svc-name">Pest Control Services</div>
-        <div class="svc-desc">Safe, eco-friendly pest management programs to systematically eliminate insects and rodents while maintaining a clean environment.</div>
+        <div class="svc-desc">Safe, eco-friendly pest management to keep insects and rodents out.</div>
       </div>
 
       <!-- 06 STP/WTP -->
       <div class="service-card reveal" style="transition-delay:.3s">
+        <!-- Photo placeholder: replace with <img src="images/service-6.jpg" alt="..."> for a real photo -->
+        <div class="svc-photo"><span>Add photo</span></div>
         <div class="svc-icon icon-water">
           <svg viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
             <!-- Pipe -->
@@ -322,7 +377,7 @@
         <div class="svc-num">06</div>
         <div class="svc-category">Water Treatment Systems</div>
         <div class="svc-name">STP / WTP Operations</div>
-        <div class="svc-desc">Reliable operation and maintenance of sewage and water treatment plants ensuring efficient performance and full regulatory compliance.</div>
+        <div class="svc-desc">Reliable STP/WTP operation, keeping performance efficient and compliant.</div>
       </div>
 
     </div>
@@ -336,16 +391,16 @@
     <h2 class="section-title reveal">Why Choose Us</h2>
     <div class="section-rule reveal"></div>
 
-    <div class="why-grid">
-      <div class="why-item reveal" style="transition-delay:.05s"><div class="why-num">01</div><div class="why-title">Trained & Verified Staff</div><div class="why-desc">Every team member is professionally screened, certified, and trained to deliver consistent, high-quality service.</div></div>
-      <div class="why-item reveal" style="transition-delay:.1s"><div class="why-num">02</div><div class="why-title">24 / 7 Support</div><div class="why-desc">Round-the-clock availability ensures we respond promptly whenever you need us — any day, any time.</div></div>
-      <div class="why-item reveal" style="transition-delay:.15s"><div class="why-num">03</div><div class="why-title">Customised Plans</div><div class="why-desc">We design service packages tailored specifically to your property's unique requirements and operational budget.</div></div>
-      <div class="why-item reveal" style="transition-delay:.2s"><div class="why-num">04</div><div class="why-title">Eco-Friendly Practices</div><div class="why-desc">We use safe, environmentally responsible products and sustainable methods across all our service areas.</div></div>
-      <div class="why-item reveal" style="transition-delay:.25s"><div class="why-num">05</div><div class="why-title">Technology-Enabled</div><div class="why-desc">Digital checklists, real-time reporting, and transparent dashboards keep you fully informed at every step.</div></div>
-      <div class="why-item reveal" style="transition-delay:.3s"><div class="why-num">06</div><div class="why-title">Transparent Pricing</div><div class="why-desc">Clear, upfront pricing with no hidden fees or surprise charges — complete clarity from day one.</div></div>
-      <div class="why-item reveal" style="transition-delay:.35s"><div class="why-num">07</div><div class="why-title">Experienced Leadership</div><div class="why-desc">Our leadership team brings decades of proven industry expertise to guide every client engagement.</div></div>
-      <div class="why-item reveal" style="transition-delay:.4s"><div class="why-num">08</div><div class="why-title">Quality Assurance</div><div class="why-desc">Regular internal audits and performance reviews ensure consistently high standards across all managed sites.</div></div>
-    </div>
+    <ul class="why-list">
+      <li class="reveal" style="transition-delay:.03s"><span class="why-check">✓</span>Trained &amp; verified staff</li>
+      <li class="reveal" style="transition-delay:.06s"><span class="why-check">✓</span>24 / 7 support</li>
+      <li class="reveal" style="transition-delay:.09s"><span class="why-check">✓</span>Customised service plans</li>
+      <li class="reveal" style="transition-delay:.12s"><span class="why-check">✓</span>Eco-friendly practices</li>
+      <li class="reveal" style="transition-delay:.15s"><span class="why-check">✓</span>Technology-enabled reporting</li>
+      <li class="reveal" style="transition-delay:.18s"><span class="why-check">✓</span>Transparent pricing</li>
+      <li class="reveal" style="transition-delay:.21s"><span class="why-check">✓</span>Experienced leadership</li>
+      <li class="reveal" style="transition-delay:.24s"><span class="why-check">✓</span>Consistent quality assurance</li>
+    </ul>
   </div>
 </section>
 
@@ -471,6 +526,6 @@
   <div class="footer-copy">© 2025 Sapphire Facility Vision. All rights reserved.</div>
 </footer>
 
-<script src="script1.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
