@@ -118,8 +118,8 @@
     );
     animation: panelSlideRight 1.4s .2s cubic-bezier(.22,1,.36,1) both;
 }
-/* Motion poster video */
-.hero-panel-silver video {
+/* Hero image */
+.hero-media {
     position: absolute;
     inset: 0;
 
