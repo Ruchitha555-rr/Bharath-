@@ -151,7 +151,6 @@
 
   /* Floating particles */
   .particles { position: absolute; inset: 0; pointer-events: none; }
-  .particles { position: absolute; inset: 0; pointer-events: none; transform: translateX(-3cm); }
   .particle {
     position: absolute;
     border-radius: 50%;
